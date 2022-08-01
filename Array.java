@@ -1,8 +1,22 @@
-public class Array
+public class Array {
+    public static void main (String args[])
 {
-  public static void main(String [] args)
-    {
-      int [] nums = {1,2,3,4,5,6,7,8,9};
-      System.out.println(nums[5]);
-    }
+  int [] m=new int[args.length];
+  int sum=0;
+  double avg;
+  for (int i=0;i< m.length;i++){
+  m[i]=Integer.perseInt(args[i]);
+  }
+  for(int i=0;i<m.length;i++)
+  {
+    System.out.println(m[i]);
+  }
+  for(int i =0;i<m.length;i++)
+  {
+    sum=sum+m[i];
+  }
+      avg=(double)sum/m.length;
+      System.out.println(avg);
+}
+    
 }
